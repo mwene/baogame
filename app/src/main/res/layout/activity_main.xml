@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Player 2 Score -->
+    <TextView
+        android:id="@+id/player2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_2_0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Game Board -->
+    <GridLayout
+        android:id="@+id/gameBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="8"
+        android:rowCount="2"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Player 2 Pits (Top Row) -->
+        <Button android:id="@+id/pit8" android:tag="8" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit7" android:tag="7" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit6" android:tag="6" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit5" android:tag="5" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit4" android:tag="4" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit3" android:tag="3" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit2" android:tag="2" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit1" android:tag="1" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+
+        <!-- Player 1 Pits (Bottom Row) -->
+        <Button android:id="@+id/pit9" android:tag="9" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit10" android:tag="10" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit11" android:tag="11" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit12" android:tag="12" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit13" android:tag="13" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit14" android:tag="14" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit15" android:tag="15" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+        <Button android:id="@+id/pit16" android:tag="16" android:layout_width="50dp" android:layout_height="50dp" android:text="@string/_4" />
+    </GridLayout>
+
+    <!-- Player 1 Score -->
+    <TextView
+        android:id="@+id/player1Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_1_0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Turn Indicator -->
+    <TextView
+        android:id="@+id/turnIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_1_s_turn"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Restart Button -->
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/restart_game"
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints" />
+
+    <!-- Help Button -->
+    <ImageButton
+        android:id="@+id/helpButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/baseline_help_center_24"
+        android:contentDescription="@string/help"
+        android:layout_marginTop="16dp"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
